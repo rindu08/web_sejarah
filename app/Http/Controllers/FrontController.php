@@ -36,7 +36,7 @@ class FrontController extends Controller
         $authors = Author::all();
 
         $guru_mapel_posts= Post::whereHas('category', function($query){
-            $query->where('judul', 'GURU MAPEL');
+            $query->where('judul', 'Guru Mapel');
         })
         ->where('is_featured', 'not_featured')
         ->latest()
@@ -44,7 +44,7 @@ class FrontController extends Controller
         ->get();
 
         $guru_mapel_featured_posts = Post::whereHas('category', function($query){
-            $query->where('judul', 'GURU MAPEL');
+            $query->where('judul', 'Guru Mapel');
         })
         ->where('is_featured', 'featured')
         ->inRandomOrder()
@@ -52,7 +52,7 @@ class FrontController extends Controller
         ->first();
         
         $kurikulum_posts= Post::whereHas('category', function($query){
-            $query->where('judul', 'KURIKULUM');
+            $query->where('judul', 'Kurikulum');
         })
         ->where('is_featured', 'not_featured')
         ->latest()
@@ -60,7 +60,7 @@ class FrontController extends Controller
         ->get();
 
         $kurikulum_featured_posts = Post::whereHas('category', function($query){
-            $query->where('judul', 'KURIKULUM');
+            $query->where('judul', 'Kurikulum');
         })
         ->where('is_featured', 'featured')
         ->inRandomOrder()
@@ -68,7 +68,7 @@ class FrontController extends Controller
         ->first();
 
         $mata_pelajaran_posts= Post::whereHas('category', function($query){
-            $query->where('judul', 'MATA PELAJARAN');
+            $query->where('judul', 'Mata Pelajaran');
         })
         ->where('is_featured', 'not_featured')
         ->latest()
@@ -76,7 +76,7 @@ class FrontController extends Controller
         ->get();
 
         $mata_pelajaran_featured_posts = Post::whereHas('category', function($query){
-            $query->where('judul', 'MATA PELAJARAN');
+            $query->where('judul', 'Mata Pelajaran');
         })
         ->where('is_featured', 'featured')
         ->inRandomOrder()

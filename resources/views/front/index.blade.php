@@ -222,6 +222,8 @@
 						@empty
 						<p> Kosong </p>
 						@endforelse
+
+                      
 					</div>
 					<div class="sticky z-10 bottom-0 w-full h-[100px] bg-gradient-to-b from-[rgba(255,255,255,0.19)] to-[rgba(255,255,255,1)]"></div>
 				</div>

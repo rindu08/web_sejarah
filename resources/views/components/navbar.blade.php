@@ -1,7 +1,7 @@
 <nav id="Navbar" class="max-w-[1130px] mx-auto flex justify-between items-center mt-[30px]">
     <div class="logo-container flex gap-[30px] items-center">
         <a href="{{ route('front.index') }}" class="flex shrink-0">
-            <img src="{{ asset('assets/images/logos/itac.png') }}" alt="logo" />
+            <img src="{{ asset('assets/images/logos/History-image.png') }}" alt="History-image" style="width:120px;" />
         </a>
         <div class="h-12 border border-[#E8EBF4]"></div>
 
